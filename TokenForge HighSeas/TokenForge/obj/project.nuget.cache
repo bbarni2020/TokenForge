@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "8ZK6aJ4z0sk=",
+  "success": true,
+  "projectFilePath": "E:\\source\\TokenForge másolata\\TokenForge\\TokenForge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.web.webview2\\1.0.2651.64\\microsoft.web.webview2.1.0.2651.64.nupkg.sha512",
+    "E:\\Programs\\Visuzal Studio 2022\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.241114003\\microsoft.windowsappsdk.1.6.241114003.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\pinvoke.kernel32\\0.7.124\\pinvoke.kernel32.0.7.124.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\pinvoke.user32\\0.7.124\\pinvoke.user32.0.7.124.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\pinvoke.windows.core\\0.7.124\\pinvoke.windows.core.0.7.124.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\pinvoke.windows.shellscalingapi\\0.7.124\\pinvoke.windows.shellscalingapi.0.7.124.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\validation\\2.4.15\\validation.2.4.15.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.11\\microsoft.netcore.app.runtime.win-x86.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.54\\microsoft.windows.sdk.net.ref.10.0.19041.54.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x86.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.11\\microsoft.netcore.app.runtime.win-arm64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.11\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.11\\microsoft.netcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Barni\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

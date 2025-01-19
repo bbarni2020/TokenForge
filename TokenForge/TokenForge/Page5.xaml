@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="TokenForge.Page5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 4: File management" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="Your WSL credentionals are needed. Please make sure that they are correct. In your Downloads folder you have a manofest.json, please upload that to the online storeage you choosed for the icon and paste the link here." TextWrapping="Wrap" Width="300"/>
+
+            <TextBlock Text="WSL username:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="username" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="WSL password:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="password" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Mainfest url:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="metadata" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Folder for the token creations:" FontSize="18"/>
+            <!-- Folder Chooser -->
+            <Button x:Name="ChooseFolderButton" Content="Choose Folder" Width="150" Click="SelectFolderButton_Click"/>
+
+            <!-- Selected Folder Display -->
+            <TextBlock x:Name="SelectedFolderText" Text="No folder selected." TextWrapping="Wrap" Width="300" FontStyle="Italic"/>
+
+            <!-- Navigation Buttons -->
+            <Button x:Name="NextButton3" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+        </StackPanel>
+    </Grid>
+</Page>
+

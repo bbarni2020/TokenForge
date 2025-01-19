@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="TokenForge.Page4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 5: Final review" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Network:" FontSize="18" x:Name="network" MaxWidth="300"/> 
+            
+            <TextBlock Text="Token name:" FontSize="18" x:Name="name" MaxWidth="300"/>
+
+            <TextBlock Text="Token symbol:" FontSize="18" x:Name="symbol" MaxWidth="300"/>
+
+            <TextBlock Text="Token description:" FontSize="18" x:Name="description" MaxWidth="300"/>
+
+            <TextBlock Text="Token picture url:" FontSize="18" x:Name="url" MaxWidth="300"/>
+
+            <TextBlock Text="Token count:" FontSize="18" x:Name="count" MaxWidth="300"/>
+            <TextBlock Text="WSL username:" FontSize="18" x:Name="username" MaxWidth="300"/>
+            <TextBlock Text="WSL password:" FontSize="18" x:Name="password" MaxWidth="300"/>
+            <TextBlock Text="Token folder:" FontSize="18" x:Name="path" MaxWidth="300"/>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton3" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+            <TextBlock Text="This can't be undone" FontSize="14" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Page>

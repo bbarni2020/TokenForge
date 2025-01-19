@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Page
+    x:Class="TokenForge.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="TokenForge" FontSize="34" FontWeight="Bold"/>
+            <TextBlock Text="Step 1: Network selecting" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Select Network:" FontSize="18"/>
+            <ComboBox x:Name="NetworkComboBox" Width="200">
+                <ComboBoxItem Content="Devnet"/>
+            </ComboBox>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="Follow the steps to create your token." TextWrapping="Wrap" Width="300"/>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton" Content="Next" Width="100" Click="NextButton_Click"/>
+            <TextBlock x:Name="ErrorText" Text="Select a network type" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.Page2"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 2: Token info" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="For the name you can select enything you want. For symbol it recommended using upper case letters like ILDP. For the image you need a 512x512 px picture or a 1024x1024 px picture's url and the picture can't be over 100kb. Recomendation: use app.pinata.cloud" TextWrapping="Wrap" Width="300"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Name:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokenname" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Symbol:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokensymbol" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Picture url:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokenurl" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton2" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+        </StackPanel>
+    </Grid>
+</Page>
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.Page3"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 3: Token description" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="There is no requirements for description. It's recommended to write a short one. Token number: how manyy tokens will be created." TextWrapping="Wrap" Width="300"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Token description:" FontSize="18"/>
+            <TextBox
+            Width="300" 
+            Height="100" 
+            TextWrapping="Wrap" 
+            AcceptsReturn="True" 
+            IsEnabled="True" 
+            x:Name="tokendsc" 
+            TextChanged="TextChanged" 
+            MaxWidth="300"></TextBox>
+            <TextBlock Text="Token count:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokennum" TextChanged="TextChanged" MaxWidth="300"/>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton3" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+        </StackPanel>
+    </Grid>
+</Page>
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.Page4"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 5: Final review" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Network:" FontSize="18" x:Name="network" MaxWidth="300"/>
+
+            <TextBlock Text="Token name:" FontSize="18" x:Name="name" MaxWidth="300"/>
+
+            <TextBlock Text="Token symbol:" FontSize="18" x:Name="symbol" MaxWidth="300"/>
+
+            <TextBlock Text="Token description:" FontSize="18" x:Name="description" MaxWidth="300"/>
+
+            <TextBlock Text="Token picture url:" FontSize="18" x:Name="url" MaxWidth="300"/>
+
+            <TextBlock Text="Token count:" FontSize="18" x:Name="count" MaxWidth="300"/>
+            <TextBlock Text="WSL username:" FontSize="18" x:Name="username" MaxWidth="300"/>
+            <TextBlock Text="WSL password:" FontSize="18" x:Name="password" MaxWidth="300"/>
+            <TextBlock Text="Token folder:" FontSize="18" x:Name="path" MaxWidth="300"/>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton3" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+            <TextBlock Text="This can't be undone" FontSize="14" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Page>
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.Page5"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 4: File management" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="Your WSL credentionals are needed. Please make sure that they are correct. In your Downloads folder you have a manofest.json, please upload that to the online storeage you choosed for the icon and paste the link here." TextWrapping="Wrap" Width="300"/>
+
+            <TextBlock Text="WSL username:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="username" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="WSL password:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="password" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Mainfest url:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="metadata" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Folder for the token creations:" FontSize="18"/>
+            <Button x:Name="ChooseFolderButton" Content="Choose Folder" Width="150" Click="SelectFolderButton_Click"/>
+
+            <TextBlock x:Name="SelectedFolderText" Text="No folder selected." TextWrapping="Wrap" Width="300" FontStyle="Italic"/>
+
+            <!-- Navigation Buttons -->
+            <Button x:Name="NextButton3" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.Test"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox x:Name="CommandTextBox" Width="300" PlaceholderText="Enter command" Margin="0,0,0,10"/>
+        <Button Content="Execute Command" Click="ExecuteCommandButton_Click"/>
+        <TextBox x:Name="OutputTextBox" Width="300" Height="200" IsReadOnly="True" TextWrapping="Wrap" Margin="0,10,0,0"/>
+    </StackPanel>
+</Page>
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    
+    x:Class="TokenForge.CMD"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Centered StackPanel with spacing -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 5: Creating token" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="it" Text="Setting up token creation" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+
+            <!-- Next Button -->
+            <Button x:Name="Starter" Content="Start" Width="100" Click="OnSendCommandClicked" Visibility="Visible"/>
+
+            <!-- Progress Indicator -->
+            <ProgressBar x:Name="ProgressBar" Width="300" Height="20" Minimum="0" Maximum="24" Value="0" Visibility="Collapsed"/>
+            <TextBlock x:Name="dnc" Text="Do not close this window!" FontSize="14" FontWeight="Bold" Visibility="Collapsed"/>
+
+            <TextBlock x:Name="item1" Text="Your wallet address:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="walletadress" Visibility="Collapsed"></TextBox>
+            <TextBlock x:Name="item2" Text="Amount you want to send to your address:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="amount" Visibility="Collapsed"></TextBox>
+            <TextBlock x:Name="item3" Text="I'm more than happy to try experince your coin! Select the amount you want to send me:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="support" Visibility="Collapsed"></TextBox>
+
+            <!-- Hyperlink -->
+            <TextBlock Visibility="Collapsed" x:Name="link">
+                <Hyperlink NavigateUri="https://brand.masterbros.dev">
+                    <Run Text="Your tokens Solana explorer page"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <Button x:Name="item4" Content="Finish" Width="100" Click="Finish" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Page>

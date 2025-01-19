@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TokenForge (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TokenForge (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

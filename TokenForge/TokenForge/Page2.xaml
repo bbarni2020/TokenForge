@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="TokenForge.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 2: Token info" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="InstructionText" Text="For the name you can select enything you want. For symbol it recommended using upper case letters like ILDP. For the image you need a 512x512 px picture or a 1024x1024 px picture's url and the picture can't be over 100kb. Recomendation: use app.pinata.cloud" TextWrapping="Wrap" Width="300"/>
+
+            <!-- Network Selection -->
+            <TextBlock Text="Name:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokenname" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Symbol:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokensymbol" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <TextBlock Text="Picture url:" FontSize="18"/>
+            <TextBox IsEnabled="True" x:Name="tokenurl" TextChanged="TokenUrl_TextChanged" MaxWidth="300"></TextBox>
+
+            <!-- Next Button -->
+            <Button x:Name="NextButton2" Content="Next" Width="100" IsEnabled="False" Click="NextButton_Click"/>
+            <Button x:Name="NextButton" Content="Back" Width="100" Click="GoBack"/>
+        </StackPanel>
+    </Grid>
+</Page>

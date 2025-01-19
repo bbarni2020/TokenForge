@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="TokenForge.CMD"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokenForge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <!-- Title -->
+            <TextBlock Text="Step 5: Creating token" FontSize="24" FontWeight="Bold"/>
+
+            <!-- Instructions -->
+            <TextBlock x:Name="it" Text="Setting up token creation" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+
+            <!-- Next Button -->
+            <Button x:Name="Starter" Content="Start" Width="100" Click="OnSendCommandClicked" Visibility="Visible"/>
+
+            <!-- Progress Indicator -->
+            <ProgressBar x:Name="ProgressBar" Width="300" Height="20" Minimum="0" Maximum="24" Value="0" Visibility="Collapsed"/>
+            <TextBlock x:Name="dnc" Text="Do not close this window!" FontSize="14" FontWeight="Bold" Visibility="Collapsed"/>
+
+            <TextBlock x:Name="item1" Text="Your wallet address:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="walletadress" Visibility="Collapsed"></TextBox>
+            <TextBlock x:Name="item2" Text="Amount you want to send to your address:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="amount" Visibility="Collapsed"></TextBox>
+            <TextBlock x:Name="item3" Text="I'm more than happy to try experince your coin! Select the amount you want to send me:" TextWrapping="Wrap" Width="300" Visibility="Collapsed"/>
+            <TextBox IsEnabled="True" x:Name="support" Visibility="Collapsed"></TextBox>
+
+            <!-- Hyperlink -->
+            <TextBlock Visibility="Collapsed" x:Name="link">
+                <Hyperlink NavigateUri="https://brand.masterbros.dev">
+                    <Run Text="Your tokens Solana explorer page"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <Button x:Name="item4" Content="Finish" Width="100" Click="Finish" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Page>
