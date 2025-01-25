@@ -1,6 +1,6 @@
-# TokenForge ⚒️🛠️
+# TokenForge ⚒️🛠️ - Create your own (Meme)coin on Solana  
 
-Create Solnan tokens on DevNet in a fully automated way. This application simplifies token creation with a clear and straightforward workflow. 🚀
+Create Solnan tokens on DevNet in a fully automated way. This application simplifies token creation with a clear and straightforward workflow. 🚀 [Demo/Tutorial  video](https://youtu.be/7ceTJWBBKVE)  
 
 ## Key Features
 - Automated token generation ⚡  
@@ -18,6 +18,7 @@ Create Solnan tokens on DevNet in a fully automated way. This application simpli
    ```bash
    TokenForge.exe
    ```
+(3. You need to have wsl installed)  
 
 ## Usage
 1. Launch TokenForge. 🖥️  
@@ -31,7 +32,7 @@ Enjoy token creation! 🤖✨
 We welcome contributions! Feel free to open issues or submit pull requests. Let's make token creation even better together! 🌟
 
 ## License
-This project is licensed under the MIT License. 📄 (AI is used for README and commenting, grammar checking.)
+This project is licensed under the MIT License. 📄 (AI is used for README commenting and grammar checking.)
 
 ## Contact
-For any questions or suggestions, please reach out to us at barnabas@masterbros.dev 📧
+For any questions or suggestions, please reach out to us at [barnabas@masterbros.dev](mailto:[barnabas@masterbros.dev) 📧
