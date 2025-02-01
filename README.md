@@ -29,7 +29,7 @@ Create Solnan tokens on DevNet in a fully automated way. This application simpli
 Enjoy token creation! 🤖✨
 
 ## Contributing
-We welcome contributions! Feel free to open issues or submit pull requests. Let's make token creation even better together! 🌟
+We welcome contributions! Feel free to open issues or submit pull requests. Let's make token creation even better together! 🌟 I use AI to clean up and format my code for better readability.
 
 ## License
 This project is licensed under the MIT License. 📄 (AI is used for README commenting and grammar checking.)
