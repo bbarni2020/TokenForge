@@ -10,13 +10,13 @@ Create Solnan tokens on DevNet in a fully automated way. This application simpli
 - Secure and safe transactions 🔒  
 
 ## Installation
-1. Clone the repository. 📂  
+1. Dwonlaod latest release. 📂  
    ```bash
-   git clone https://github.com/bbarni2020/TokenForge.git
+   gcurl -s https://api.github.com/repos/bbarni2020/TokenForge/releases/latest
    ```
-2. Run the executable. 🚀  
+2. Run the installer. 🚀  
    ```bash
-   TokenForge.exe
+   Install.psi
    ```
 (3. You need to have wsl installed)  
 
